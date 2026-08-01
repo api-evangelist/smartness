@@ -1,8 +1,24 @@
 aid: smartness
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/smartness.png
 name: Smartness
-description: 'Smartness is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Applicative SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Smartness (formerly Smartpricing) is an Italian hospitality-technology company that helps hotels,
+  B&Bs, and vacation-rental operators automate online operations and grow direct revenue. Its product suite spans
+  AI dynamic pricing (Smartpricing), a property management system (Smartpms), 24/7 guest messaging (Smartchat),
+  email marketing and segmentation (Smartconnect), a website builder (Smartsite), reputation, ads, and payments
+  (Smartpay), serving 4,000+ accommodation providers across Europe. Smartness connects to 80+ PMS and
+  channel-manager platforms through partner integrations, but publishes no public developer API or portal;
+  integrations are arranged via a partnership request. Backed by Partech.'
 url: https://raw.githubusercontent.com/api-evangelist/smartness/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Applicative Saas
+- Hospitality
+- Hotel Software
+- Revenue Management
+- Dynamic Pricing
+- Property Management
+- Vacation Rental
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/smartness-domain-security.yml
 - type: Website
   url: https://www.smartness.com/
+- type: GitHubOrganization
+  url: https://github.com/smartpricing
+- type: Blog
+  url: https://www.smartness.com/en/blog
+- type: Pricing
+  url: https://www.smartness.com/en/pricing
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
